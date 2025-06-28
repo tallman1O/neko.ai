@@ -1,111 +1,39 @@
-# 🐾 neko.ai
+# Neko.ai - Real-Time Meeting Transcription and Summarization
 
-![neko.ai Banner](./public/banner.png)
+<p align="center">
+  <img src="./public/neko.svg" alt="neko.ai logo" width="120" style="background-color: #ffffff;"/>
+</p>
 
-**neko.ai** is an AI SaaS platform for **real-time meeting transcription and intelligent summarization**, inspired by the agility and attentiveness of a black & white cat. Capture every detail and convert conversations into actionable insights seamlessly.
-
----
-
-## ✨ Features
-
-- **🔊 Real-Time Transcription**  
-  Join meetings with a single click. neko.ai's bot streams accurate transcriptions in real time.
-
-- **📝 AI Summarization**  
-  Generate detailed overviews, bullet-point summaries, action items, and custom notes to keep your workflow efficient.
-
-- **🔗 Multi-Platform Support**  
-  Currently integrates with Google Meet (via Vexa API). More platforms coming soon.
-
-- **📈 Dashboard & History**  
-  Manage, view, and search your meeting transcripts with an intuitive dashboard.
-
-- **💡 Seamless Auth & Billing**  
-  Secure authentication and subscription management powered by Supabase and Stripe/Razorpay.
+> **Like a cat, Neko.ai listens with intent, observes with clarity, and acts with precision.**
 
 ---
 
-## 🚀 Tech Stack
+## ✨ What is Neko.ai?
 
-- **Frontend & Backend:** Next.js 15 (Fullstack)
-- **Authentication & Database:** Supabase
-- **AI & Transcription APIs:**  
-  - Vexa.ai (meeting transcription)  
-  - OpenRouter.ai (LLM summarization)
-- **Payment Gateway:** Stripe or Razorpay (for UPI support in India)
-- **Hosting:** Vercel
+**neko.ai** is an AI SaaS platform for **real-time meeting transcription and intelligent summarization**, inspired by the agility and attentiveness of a black & white cat. Capture every detail. Convert conversations into clear, actionable insights.
 
 ---
 
-## 🛠️ Setup & Deployment
+## 🚀 Features
 
-1. **Clone the repository**
-
-    ```bash
-    git clone https://github.com/tallman1O/neko.ai.git
-    cd neko.ai
-    ```
-
-2. **Install dependencies**
-
-    ```bash
-    pnpm install
-    ```
-
-3. **Configure environment variables**
-
-    Create a `.env.local` file with:
-
-    ```env
-    NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-    NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
-    SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
-
-    VEXA_API_KEY=your_vexa_api_key
-    OPENROUTER_API_KEY=your_openrouter_api_key
-
-    STRIPE_SECRET_KEY=your_stripe_key (or Razorpay credentials)
-    ```
-
-4. **Run the development server**
-
-    ```bash
-    pnpm dev
-    ```
-
-5. **Deploy**
-
-    Deploy easily on Vercel with environment variables configured.
+✅ **Real-Time Meeting Transcription** – Instantly stream accurate transcripts during your meetings with our Vexa-powered bot.  
+✅ **AI Summarization** – Generate overviews, bullet points, action items, and custom summaries effortlessly.  
+✅ **Multi-Platform Support** – Currently supports Google Meet (more platforms coming soon).  
+✅ **Personalized Dashboard** – Manage and search your transcripts with an intuitive UI.  
+✅ **Secure Auth & Billing** – Auth via Clerk, billing via Stripe/Razorpay with UPI support.
 
 ---
 
-## 🐱 Philosophy
+## 💻 Tech Stack
 
-> **"Like a cat, neko.ai listens with intent, observes with clarity, and acts with precision."**
+| Tech | Description |
+|------|-------------|
+| ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white) | Fullstack React framework |
+| ![Clerk](https://img.shields.io/badge/Clerk-3E2DCC?style=flat-square&logo=clerk&logoColor=white) | Authentication & user management |
+| ![Neon](https://img.shields.io/badge/NeonDB-0A4FFF?style=flat-square&logo=postgresql&logoColor=white) | Serverless Postgres database |
+| ![Drizzle](https://img.shields.io/badge/Drizzle%20ORM-FF9E0F?style=flat-square&logoColor=white) | Type-safe SQL ORM |
+| ![Vexa.ai](https://img.shields.io/badge/Vexa.ai-14A800?style=flat-square&logoColor=white) | Real-time transcription API |
+| ![OpenRouter](https://img.shields.io/badge/OpenRouter.ai-800080?style=flat-square&logoColor=white) | LLM summarization |
+| ![Stripe](https://img.shields.io/badge/Stripe-008CDD?style=flat-square&logo=stripe&logoColor=white) / ![Razorpay](https://img.shields.io/badge/Razorpay-0C86EE?style=flat-square&logo=razorpay&logoColor=white) | Payment gateway with UPI |
+| ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white) | Hosting & deployment |
 
-Our mission is to empower individuals and teams to **capture, organize, and actionize knowledge effortlessly**, ensuring conversations become productivity assets.
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please open issues or submit pull requests for improvements, bug fixes, or feature suggestions.
-
----
-
-## ✨ Credits
-
-- **Founder & Developer:** Mehul Uttam  
-- **APIs:** [Vexa.ai](https://vexa.ai), [OpenRouter.ai](https://openrouter.ai)  
----
-
-## 📫 Contact
-
-For business inquiries, collaborations, or feedback:
-
-- **Email:** mehuluttam@example.com
-- **LinkedIn:** [Mehul Uttam](https://linkedin.com/in/mehul-uttam)
-
----
-
-**neko.ai – Listen. Summarize. Actionize.**
