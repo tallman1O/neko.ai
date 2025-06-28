@@ -1,103 +1,34 @@
-import Image from "next/image";
+import React from "react";
 
-export default function Home() {
+const Home = () => {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <div className="bg-white">
+      Home
+      <svg
+        width="220"
+        height="48"
+        viewBox="0 0 220 48"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g clip-path="url(#clip0_8_18)">
+          <path
+            d="M45.0353 4.66312C45.8331 3.77669 46.7195 3.04539 47.6281 2.46921C49.2236 1.47198 50.9079 0.940125 52.6364 0.940125V15.411C51.3732 11.0232 48.6475 7.25591 45.0353 4.66312ZM66.5533 40.9401H15.2957C6.87461 40.9401 0.0712891 34.1146 0.0712891 25.7157C0.0712891 17.6714 6.3206 11.0675 14.232 10.5135V0.940125C16.0048 0.940125 17.7555 1.44982 19.3954 2.46921C20.304 3.02323 21.1904 3.75453 21.9882 4.59663C25.2458 2.31409 29.1904 0.984446 33.4674 0.984446C33.4674 10.2254 30.1433 20.9734 19.3289 20.9955H33.3566C32.9577 19.2005 31.3178 17.8709 29.3677 17.8487H37.5228C35.5727 17.8487 33.9328 19.2005 33.5339 21.0177H46.6087C49.2236 21.0177 51.8164 21.5274 54.2541 22.5468C56.6696 23.544 58.8857 25.0288 60.725 26.8681C62.5865 28.7296 64.0491 30.9235 65.0464 33.339C66.0436 35.7324 66.5533 38.3252 66.5533 40.9401ZM22.8525 10.7795C23.1849 11.6437 24.0713 12.6188 25.3123 13.3279C26.5533 14.0371 27.8386 14.3252 28.7472 14.1922C28.4148 13.3279 27.5284 12.3529 26.2874 11.6437C25.0464 10.9346 23.761 10.6465 22.8525 10.7795ZM41.5117 13.3279C40.2707 14.0371 38.9854 14.3252 38.0768 14.1922C38.4092 13.3279 39.2957 12.3529 40.5367 11.6437C41.7777 10.9346 43.063 10.6465 43.9716 10.7795C43.6613 11.6437 42.7527 12.6188 41.5117 13.3279Z"
+            fill="#283841"
+          />
+        </g>
+        <path
+          d="M114.328 35H107.224L99.704 23.608V35H92.6V12.344H99.704L107.224 23.928V12.344H114.328V35ZM135.01 25.816C135.01 26.3067 134.978 26.776 134.914 27.224H123.49C123.596 28.7813 124.247 29.56 125.442 29.56C126.21 29.56 126.764 29.208 127.106 28.504H134.626C134.37 29.784 133.826 30.936 132.994 31.96C132.183 32.9627 131.148 33.7627 129.89 34.36C128.652 34.936 127.287 35.224 125.794 35.224C124.002 35.224 122.402 34.8507 120.994 34.104C119.607 33.3573 118.519 32.2907 117.73 30.904C116.962 29.496 116.578 27.8533 116.578 25.976C116.578 24.0987 116.962 22.4667 117.73 21.08C118.519 19.672 119.607 18.5947 120.994 17.848C122.402 17.1013 124.002 16.728 125.794 16.728C127.586 16.728 129.175 17.1013 130.562 17.848C131.97 18.5733 133.058 19.6187 133.826 20.984C134.615 22.3493 135.01 23.96 135.01 25.816ZM127.81 24.12C127.81 23.5227 127.618 23.0747 127.234 22.776C126.85 22.456 126.37 22.296 125.794 22.296C124.535 22.296 123.799 22.904 123.586 24.12H127.81ZM148.808 35L144.36 27.8V35H137.256V11.32H144.36V23.704L148.872 16.952H157.128L150.376 26.04L157.288 35H148.808ZM167.457 35.224C165.644 35.224 164.012 34.8507 162.561 34.104C161.111 33.3573 159.969 32.2907 159.137 30.904C158.327 29.496 157.921 27.8533 157.921 25.976C157.921 24.0987 158.327 22.4667 159.137 21.08C159.969 19.672 161.111 18.5947 162.561 17.848C164.012 17.1013 165.644 16.728 167.457 16.728C169.271 16.728 170.903 17.1013 172.353 17.848C173.804 18.5947 174.935 19.672 175.745 21.08C176.577 22.4667 176.993 24.0987 176.993 25.976C176.993 27.8533 176.577 29.496 175.745 30.904C174.935 32.2907 173.804 33.3573 172.353 34.104C170.903 34.8507 169.271 35.224 167.457 35.224ZM167.457 29.08C168.119 29.08 168.673 28.824 169.121 28.312C169.569 27.7787 169.793 27 169.793 25.976C169.793 24.952 169.569 24.184 169.121 23.672C168.673 23.1387 168.119 22.872 167.457 22.872C166.796 22.872 166.241 23.1387 165.793 23.672C165.345 24.184 165.121 24.952 165.121 25.976C165.121 27 165.335 27.7787 165.761 28.312C166.209 28.824 166.775 29.08 167.457 29.08ZM182.745 35.256C181.508 35.256 180.516 34.9253 179.769 34.264C179.022 33.6027 178.649 32.7707 178.649 31.768C178.649 30.744 179.022 29.9013 179.769 29.24C180.516 28.5573 181.508 28.216 182.745 28.216C183.961 28.216 184.942 28.5573 185.689 29.24C186.436 29.9013 186.809 30.744 186.809 31.768C186.809 32.7707 186.436 33.6027 185.689 34.264C184.942 34.9253 183.961 35.256 182.745 35.256ZM188.484 25.976C188.484 24.0773 188.804 22.4347 189.444 21.048C190.105 19.64 191.001 18.5733 192.132 17.848C193.262 17.1013 194.532 16.728 195.94 16.728C197.113 16.728 198.126 16.9733 198.98 17.464C199.833 17.9333 200.484 18.584 200.932 19.416V16.952H208.004V35H200.932V32.536C200.484 33.368 199.833 34.0293 198.98 34.52C198.126 34.9893 197.113 35.224 195.94 35.224C194.532 35.224 193.262 34.8613 192.132 34.136C191.001 33.3893 190.105 32.3227 189.444 30.936C188.804 29.528 188.484 27.8747 188.484 25.976ZM200.932 25.976C200.932 25.016 200.686 24.2693 200.196 23.736C199.705 23.2027 199.076 22.936 198.308 22.936C197.54 22.936 196.91 23.2027 196.42 23.736C195.929 24.2693 195.684 25.016 195.684 25.976C195.684 26.936 195.929 27.6827 196.42 28.216C196.91 28.7493 197.54 29.016 198.308 29.016C199.076 29.016 199.705 28.7493 200.196 28.216C200.686 27.6827 200.932 26.936 200.932 25.976ZM214.778 15.512C213.54 15.512 212.548 15.1813 211.802 14.52C211.055 13.8587 210.682 13.0267 210.682 12.024C210.682 11 211.055 10.1573 211.802 9.496C212.548 8.81333 213.54 8.472 214.778 8.472C215.994 8.472 216.975 8.81333 217.722 9.496C218.468 10.1573 218.842 11 218.842 12.024C218.842 13.0267 218.468 13.8587 217.722 14.52C216.975 15.1813 215.994 15.512 214.778 15.512ZM218.298 16.952V35H211.194V16.952H218.298Z"
+          fill="black"
         />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <defs>
+          <clipPath id="clip0_8_18">
+            <rect width="67" height="41" fill="white" />
+          </clipPath>
+        </defs>
+      </svg>
     </div>
   );
-}
+};
+
+export default Home;
