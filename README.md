@@ -1,7 +1,7 @@
 # Neko.ai - Real-Time Meeting Transcription and Summarization
 
 <p align="center">
-  <img src="./public/neko.svg" alt="neko.ai logo" width="120" style="background-color: #ffffff;"/>
+  <img src="./public/banner.svg" alt="neko.ai logo" width="200"/>
 </p>
 
 > **Like a cat, Neko.ai listens with intent, observes with clarity, and acts with precision.**
